@@ -29,15 +29,6 @@ header {
   border-bottom: 1px solid seashell;
 }
 
-nav span {
-  display: inline-block;
-  padding: 20px 10px;
-}
-
-nav span a {
-  color: seashell;
-}
-
 #logo {
   display: flex;
   flex-grow: 1;
@@ -48,17 +39,26 @@ nav span a {
   padding-left: 10px;
 }
 
+#header_nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+#header_nav span a {
+  color: seashell;
+}
+
+/* Main Content Container */
+
+#main {
+  padding-top: 70px;
+}
+
 /* Mission Section */
 
 #mission {
   display: flex;
-  padding-top: 70px;
   justify-content: center;
-}
-
-#mission_overlay {
-  background-color: black;
-  width: 1200px;
 }
 
 #mission .flex_container {
@@ -67,6 +67,11 @@ nav span a {
   width: 1200px;
   height: 700px;
   background-image: url(./images/img-mission-background.jpg);
+}
+
+#mission .flex_container #mission_overlay {
+  background-color: black;
+  width: 1200px;
 }
 
 /* Featured Tea Section */
@@ -87,24 +92,37 @@ nav span a {
   justify-content: center;
 }
 
-#featured_tea .flex_container img {
+#featured_tea .flex_container .item {
+  padding: 5px;
+}
+
+#featured_tea .flex_container .item img {
   width: 300px;
   height: 200px;
   margin: 10px;
 }
 
-#featured_tea .flex_container span {
+#featured_tea .flex_container .item span {
   display: block;
   font-weight: bold;
 }
 
-#featured_tea .flex_container .item {
-  padding: 5px;
-}
-
 /* Locations Section */
 
-.location {
+#locations {
+  height: 500px;
+  width: 1200px;
+  background-image: url(./images/img-locations-background.jpg);
+  margin: auto;
+  padding-top: 70px;
+}
+
+#locations .flex_container {
+  display: flex;
+  justify-content: center;
+}
+
+#locations .flex_container .location {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,35 +134,18 @@ nav span a {
   opacity: 1.0;
 }
 
-#locations_header {
-  padding-top: 70px;
-}
-
-#locations {
-  height: 500px;
-  width: 1200px;
-  background-image: url(./images/img-locations-background.jpg);
-  margin: auto;
-}
-
-#locations .flex_container {
-  display: flex;
-  justify-content: center;
-}
-
 /* Footer Section */
 
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-footer span {
-  display: flex;
-  padding-left: 20px;
 }
 
 #contact {
   height: 200px;
+}
+
+#copyright {
+  text-align: left;
+  padding-left: 20px;
 }
