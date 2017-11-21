@@ -5,18 +5,11 @@
   background-color: black;
   text-align: center;
   opacity: 0.9;
+  margin: 0px;
 }
 
-body {
-  margin: auto;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 30px;
+h2, h3, h4 {
+  padding: 10px;
 }
 
 /* Header Section */
@@ -71,6 +64,16 @@ nav span {
 }
 
 /* Featured Tea Section */
+
+#featured_tea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  padding-top: 70px;
+}
 
 #featured_tea .flex_container {
   display: flex;
