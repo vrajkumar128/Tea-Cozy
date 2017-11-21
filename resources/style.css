@@ -3,8 +3,12 @@
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
   text-align: center;
+  opacity: 0.9;
+}
+
+body {
+  margin: auto;
 }
 
 /* Header */
@@ -23,10 +27,6 @@ header {
   border-bottom: 1px solid seashell;
 }
 
-nav span {
-  display: inline-block;
-}
-
 .logo {
   display: flex;
   flex-grow: 1;
@@ -35,4 +35,29 @@ nav span {
 .logo img {
   height: 50px;
   padding-left: 10px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/* Mission Container */
+
+#mission {
+  display: flex;
+  padding-top: 70px;
+  justify-content: center;
+}
+
+.flex_container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  height: 700px;
+  background-image: url("./images/img-mission-background.jpg");
+}
+
+.mission_overlay {
+  width: 1200px;
 }
