@@ -106,9 +106,13 @@ nav span a {
 
 .location {
   background-color: black;
+  box-sizing: border-box;
   width: 300px;
   margin: 5px 20px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  padding: 10px;
 }
 
 #locations_header {
@@ -120,4 +124,9 @@ nav span a {
   width: 1200px;
   background-image: url(./images/img-locations-background.jpg);
   margin: auto;
+}
+
+#locations .flex_container {
+  display: flex;
+  justify-content: center;
 }
