@@ -1,4 +1,4 @@
-* {
+body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
@@ -9,6 +9,7 @@
 }
 
 h2, h3, h4 {
+  margin: 0px;
   padding: 10px;
 }
 
@@ -33,6 +34,10 @@ nav span {
   padding: 20px 10px;
 }
 
+nav span a {
+  color: seashell;
+}
+
 #logo {
   display: flex;
   flex-grow: 1;
@@ -52,6 +57,7 @@ nav span {
 }
 
 #mission_overlay {
+  background-color: black;
   width: 1200px;
 }
 
@@ -60,7 +66,7 @@ nav span {
   align-items: center;
   width: 1200px;
   height: 700px;
-  background-image: url("./images/img-mission-background.jpg");
+  background-image: url(./images/img-mission-background.jpg);
 }
 
 /* Featured Tea Section */
@@ -94,4 +100,24 @@ nav span {
 
 #featured_tea .flex_container .item {
   padding: 5px;
+}
+
+/* Locations Section */
+
+.location {
+  background-color: black;
+  width: 300px;
+  margin: 5px 20px;
+  display: inline-block;
+}
+
+#locations_header {
+  padding-top: 70px;
+}
+
+#locations {
+  height: 500px;
+  width: 1200px;
+  background-image: url(./images/img-locations-background.jpg);
+  margin: auto;
 }
