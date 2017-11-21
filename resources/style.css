@@ -105,14 +105,15 @@ nav span a {
 /* Locations Section */
 
 .location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: black;
   box-sizing: border-box;
   width: 300px;
   margin: 5px 20px;
-  display: flex;
-  flex-direction: column;
-  opacity: 1;
   padding: 10px;
+  opacity: 1.0;
 }
 
 #locations_header {
@@ -129,4 +130,21 @@ nav span a {
 #locations .flex_container {
   display: flex;
   justify-content: center;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer span {
+  display: flex;
+  padding-left: 20px;
+}
+
+#contact {
+  height: 200px;
 }
